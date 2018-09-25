@@ -84,7 +84,7 @@ javascript: (function(func, scr) {
     
     degree.total = degree.list.length - 1;
     const r = Math.randomInt(degree.total);
-    
+    console.log(degree.list[r]);
     $('#text').text(degree.list[r]);
     localStorage.setItem("shogo", degree.list[r]);    
 });
