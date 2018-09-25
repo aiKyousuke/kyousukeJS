@@ -30,7 +30,7 @@ javascript: (function(func, scr) {
     const degree = {};
     const dd = new Date();
     degree.year = dd.getFullYear();
-    degree.oldYear = year - 1;    
+    degree.oldYear = degree.year - 1;    
     
     degree.list = [`あさがおの成長日記つけてます`, `汗をかいてもさわやかグランプリ${degree.oldYear}王者`,
                    `頭を強く打ってこうなりました`, `兄が完璧すぎて恋愛相手が見つからない`,
@@ -84,7 +84,7 @@ javascript: (function(func, scr) {
     
     degree.total = degree.list.length - 1;
     const r = Math.randomInt(degree.total);
-    console.log(degree.list[r]);
+    
     $('#text').text(degree.list[r]);
     localStorage.setItem("shogo", degree.list[r]);    
 });
