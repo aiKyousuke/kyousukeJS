@@ -34,7 +34,16 @@ javascript: (function(func, scr) {
     
     const imgUrl = 'personal/user780/pic/';
     
-    const imgList = ['lba2121.jpg', 'rngif1.gif', 'moa3.jpg'];
+    const imgList = ['lba2121.jpg', 'rngif1.gif', 'moa3.jpg', 'kda5.jpg', 'ssa1.jpg',
+                     'lba8.jpg', 'aca1.jpg', 'kda4.jpg', 'kma2.jpg', 'kma1.jpg',
+                     'anime0301.jpg', 'animeex1.jpg', 'komaria01.jpg', 'anime15n01.jpg', 'rna4.jpg',
+                     'hra3.jpg', 'kda6.jpg', 'kma8.jpg', 'kdg1.gif', 'rna3.jpg',
+                     'hra2.jpg', 'lba10.jpg', 'yka3.jpg', 'moa2.jpg', 'rna2.jpg',
+                     'lba9.jpg', 'moa1.jpg', 'kna2.jpg', 'kga1.jpg', 'rna1.jpg',
+                     'kda3.jpg', 'hra1.jpg', 'kna1.jpg', 'kma6.jpg', 'kmrna1.jpg',
+                     'msa2.jpg', 'kya1.jpg', 'kma4.jpg', '79942.jpg', 'lba7.jpg',
+                     'lba6.jpg', 'lba5.jpg', 'lba4.jpg', 'lba3.jpg', 'lba2.jpg',
+                     'lba1.jpg', 'yka2.jpg', 'kda2.jpg'];
     
     const imgCount = imgList.length;
     const r = Math.randomInt(imgCount);
