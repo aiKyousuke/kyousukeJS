@@ -27,6 +27,6 @@ javascript: (function(func, scr) {
         return Math.floor(max * nextUInt());
     };
     
-    $('body > div:eq(0) > div:eq(0) > a > img').attr('src', 'personal/user780/pic/ky02.jpg');
+    $('body > div:eq(0) > div:eq(0) > div:eq(1)').attr('style', 'background-color:#ffffff;border:1px solid #FF0000;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;');
     
 });
