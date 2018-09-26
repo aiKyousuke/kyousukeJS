@@ -130,7 +130,7 @@ javascript: (function(func, scr) {
                    `両親が月の裏の秘密基地で働いている`,
                    `ロリ容疑`];
     
-    degree.total = degree.list.length - 1;
+    degree.total = degree.list.length;
     const r = Math.randomInt(degree.total);
     
     $('#text').text(degree.list[r]);
