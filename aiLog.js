@@ -27,6 +27,18 @@ javascript: (function(func, scr) {
         return Math.floor(max * nextUInt());
     };
     
-    $('body > div:eq(0) > div:eq(0) > div:eq(1)').attr('style', 'background-color:#ffffff;border:1px solid #FF0000;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;');
+    const tagDiv = 'body > div:eq(0) > div:eq(0) > div:eq(1)';
+    const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:5px;minx-width:300px;max-width:600px;padding:0px;'
     
+    $(tagDiv).attr('style', changeStyle);
+    
+    const imgUrl = 'personal/user780/pic/';
+    
+    const imgList = ['lba2121.jpg', 'rngif1.gif', 'moa3.jpg'];
+    
+    const imgCount = imgList.length;
+    const r = Math.randomInt(imgCount);
+    
+    const output = '<img src=' + imgList[r] + '>';
+    $(tagDiv).append(output);
 });
