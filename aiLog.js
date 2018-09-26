@@ -48,6 +48,6 @@ javascript: (function(func, scr) {
     const imgCount = imgList.length;
     const r = Math.randomInt(imgCount);
     
-    const output = '<img src=' + imgUrl + imgList[r] + '>';
-    $(tagDiv).append(output);
+    const output = imgUrl + imgList[r];
+    $('#randimg').attr('src', output);
 });
