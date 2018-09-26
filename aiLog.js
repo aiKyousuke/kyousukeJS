@@ -27,6 +27,6 @@ javascript: (function(func, scr) {
         return Math.floor(max * nextUInt());
     };
     
-    $('body > div:eq(0) > div:eq(0) > div:eq(0)').html('tttttesttttt');
+    $('body > div:eq(0) > div:eq(0) > div:eq(1)').text('tttttesttttt');
     
 });
