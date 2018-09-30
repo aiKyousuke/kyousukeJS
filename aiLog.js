@@ -28,7 +28,8 @@ javascript: (function(func, scr) {
     };
     
     const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
-    const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
+    tagDiv.html('test');
+    /*const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
     tagDiv.attr('style', changeStyle);
     
     const imgUrl = 'personal/user780/pic/';
@@ -48,6 +49,6 @@ javascript: (function(func, scr) {
     const r = Math.randomInt(imgCount);
     
     const output = imgUrl + imgList[r];
-    $('#randimg').attr('src', output);
+    $('#randimg').attr('src', output);*/
     
 });
