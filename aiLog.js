@@ -47,33 +47,23 @@ javascript: (function(func, scr) {
 
     const output = imgUrl + imgList[r];
     
-    const main = function(){
-        /*const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
-        const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
-        tagDiv.attr('style', changeStyle);
-        const addHtml = `<a href="http://ai-saloon.com/">` + 
-              `<img id="randimg" src="${output}" width="100%">` +
-              `</a>` +
-              `</div>` +
-              `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">` +
-              mainText;
-        tagDiv.html(addHtml);*/
+    const pc = function(){
         const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
         tagDiv.append('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
     
-    const sub = function(){
+    const other = function(){
         const tagDiv = $('body > div:eq(0) > table:eq(0)');
         tagDiv.before('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0" style="max-width:310px;"></a>');
     };
     
     const ua = navigator.userAgent;
     if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-        sub();
+        other();
     } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-        sub();
+        other();
     } else {
-        main();
+        pc();
     };
     
 });
