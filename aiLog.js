@@ -58,4 +58,7 @@ javascript: (function(func, scr) {
           `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">` +
           mainText;
     tagDiv.html(addHtml);
+    
+    const smpDiv = $('body > div:eq(0) > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0)');
+    smpDiv.html('');
 });
