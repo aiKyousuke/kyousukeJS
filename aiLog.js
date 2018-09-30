@@ -47,27 +47,11 @@ javascript: (function(func, scr) {
 
     const output = imgUrl + imgList[r];
     
-    const pc = function(){
-        var tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
-        if (tagDiv.length > 0){
-            tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
-        } else {
-            other();
-        };
-    };
-    
-    const other = function(){
-        var tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
+    const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
+    if (tagDiv.length > 0){
+        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
+    } else {
+        const classicTagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
         tagDiv.attr('src', output);
     };
-    
-    const ua = navigator.userAgent;
-    if (ua.indexOf('iPhone') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
-        other();
-    } else if (ua.indexOf('iPad') > 0 || ua.indexOf('Android') > 0) {
-        other();
-    } else {
-        pc();
-    };
-    
 });
