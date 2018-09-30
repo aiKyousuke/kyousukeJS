@@ -58,7 +58,7 @@ javascript: (function(func, scr) {
     
     
     $('#ttestt').click(function(){
-        $('input[name="subtype"]').attr('value', '話す');
+        console.log($('body > div:eq(0) > form:eq(0)').attr('action'));
     });
     
 });
