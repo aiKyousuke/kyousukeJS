@@ -48,7 +48,7 @@ javascript: (function(func, scr) {
     const output = imgUrl + imgList[r];
     
     const checkDiv = $('input[value="submit"]');
-    if (tagDiv.length > 0){
+    if (checkDiv.length > 0){
         const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
         tagDiv.attr('src', output);
     } else {
@@ -56,9 +56,6 @@ javascript: (function(func, scr) {
         tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
     
-    
-    $('#ttestt').click(function(){
-        console.log($('body > div:eq(0) > form:eq(0)').attr('action'));
-    });
+    checkDiv.attr('value', '話す');
     
 });
