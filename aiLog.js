@@ -72,7 +72,7 @@ javascript: (function(func, scr) {
               `</font>` +
               `</div>` +
               `<hr color="#0080FF">`;
-        tagDiv.html('');
+        tagDiv.html(addHtml);
     };
     
     const ua = navigator.userAgent;
