@@ -48,6 +48,11 @@ javascript: (function(func, scr) {
     const r = Math.randomInt(imgCount);
     
     const output = imgUrl + imgList[r];
-    $('#randimg').attr('src', output);
-    
+    //$('#randimg').attr('src', output);
+    const addHtml = `<a href="http://ai-saloon.com/">` + 
+          `<img id="randimg" src="${output}" width="100%">` +
+          `</a>` +
+          `</div>` +
+          `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">`;
+    tagDiv.html(addHtml);
 });
