@@ -56,6 +56,6 @@ javascript: (function(func, scr) {
         tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
     
-    $('input[value="submit"]').attr('value', '話す');
+    $('body > div:eq(0) > form:eq(0) > input:eq(1)').attr('value', '話す');
     
 });
