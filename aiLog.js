@@ -28,7 +28,7 @@ javascript: (function(func, scr) {
     };
     
     const tagDiv = 'body > div:eq(0) > div:eq(0) > div:eq(1)';
-    const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:5px;minx-width:300px;max-width:600px;padding:0px;'
+    const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
     
     $(tagDiv).attr('style', changeStyle);
     
