@@ -49,12 +49,12 @@ javascript: (function(func, scr) {
     
     const pc = function(){
         const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
-        tagDiv.append('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
+        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
     
     const other = function(){
-        const tagDiv = $('body > div:eq(0) > table:eq(0)');
-        tagDiv.before('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0" style="max-width:310px;"></a>');
+        const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
+        tagDiv.attr('src', output);
     };
     
     const ua = navigator.userAgent;
