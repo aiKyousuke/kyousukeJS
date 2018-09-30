@@ -47,11 +47,15 @@ javascript: (function(func, scr) {
 
     const output = imgUrl + imgList[r];
     
-    const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
+    const checkDiv = $('input[value="submit"]');
     if (tagDiv.length > 0){
-        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
-    } else {
-        const classicTagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
+        const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
         tagDiv.attr('src', output);
+    } else {
+        const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
+        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
+    
+    $('input[value="submit"]').attr('value', '話す');
+    
 });
