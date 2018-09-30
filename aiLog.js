@@ -27,6 +27,8 @@ javascript: (function(func, scr) {
         return Math.floor(max * nextUInt());
     };
     
+    const mainText = $('#text').text();
+    
     const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
     const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
     tagDiv.attr('style', changeStyle);
@@ -53,6 +55,7 @@ javascript: (function(func, scr) {
           `<img id="randimg" src="${output}" width="100%">` +
           `</a>` +
           `</div>` +
-          `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">`;
+          `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">` +
+          mainText;
     tagDiv.html(addHtml);
 });
