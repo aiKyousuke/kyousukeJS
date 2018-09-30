@@ -48,7 +48,7 @@ javascript: (function(func, scr) {
     const output = imgUrl + imgList[r];
     
     const main = function(){
-        const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
+        /*const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
         const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
         tagDiv.attr('style', changeStyle);
         const addHtml = `<a href="http://ai-saloon.com/">` + 
@@ -57,7 +57,9 @@ javascript: (function(func, scr) {
               `</div>` +
               `<div style="background-color:#ffffff;border:1px solid #0080FF;margin-top:5px;minx-width:300px;max-width:600px;padding:3px;">` +
               mainText;
-        tagDiv.html(addHtml);
+        tagDiv.html(addHtml);*/
+        const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
+        tagDiv.append('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
     };
     
     const sub = function(){
