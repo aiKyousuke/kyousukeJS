@@ -48,12 +48,16 @@ javascript: (function(func, scr) {
     const output = imgUrl + imgList[r];
     
     const pc = function(){
-        const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
-        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
+        var tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
+        if (tagDiv.length > 0){
+            tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
+        } else {
+            other();
+        };
     };
     
     const other = function(){
-        const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
+        var tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
         tagDiv.attr('src', output);
     };
     
