@@ -51,7 +51,6 @@ javascript: (function(func, scr) {
         const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(1)');
         const changeStyle = 'background-color:#ffffff;border:1px solid #ffffff;margin-top:0px;minx-width:300px;max-width:640px;padding:0px;'
         tagDiv.attr('style', changeStyle);
-        //$('#randimg').attr('src', output);
         const addHtml = `<a href="http://ai-saloon.com/">` + 
               `<img id="randimg" src="${output}" width="100%">` +
               `</a>` +
@@ -63,6 +62,16 @@ javascript: (function(func, scr) {
     
     const sub = function(){
         const tagDiv = $('body > div:eq(0) > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0)');
+        const addHtml = `<a href="http://ai-saloon.com/">` +
+              `<img id="randimg" src="${output}" width="100%">` +
+              `</a>` +
+              `<hr color="#0080FF">` +
+              `<div align="left">` +
+              `<font color="#0066FF">` +
+              mainText +
+              `</font>` +
+              `</div>` +
+              `<hr color="#0080FF">`;
         tagDiv.html('');
     };
     
