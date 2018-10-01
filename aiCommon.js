@@ -7,9 +7,7 @@ javascript: (function(func, scr) {
     document.body.appendChild(scr)
 })(function($) {
     "use strict";
-    
-    $('body').css('margin', '0px');
-    
+
     $('input[value="submit"]').attr('value', '話す');
     
 });
