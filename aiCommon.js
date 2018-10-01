@@ -1,13 +1,5 @@
-javascript: (function(func, scr) {
-    scr = document.createElement("script");
-    scr.src = "//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js";
-    scr.onload = function() {
-        func(jQuery.noConflict(true))
-    };
-    document.body.appendChild(scr)
-})(function($) {
+(function(){
     "use strict";
-    
     const nextUInt = function() {
         let x = Math.floor(Math.random() * 1000000000);
         let y = Math.floor(Math.random() * 1000000000);
@@ -26,6 +18,17 @@ javascript: (function(func, scr) {
     Math.randomInt = function(max) {
         return Math.floor(max * nextUInt());
     };
+})();
+
+(function(func, scr) {
+    scr = document.createElement("script");
+    scr.src = "//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js";
+    scr.onload = function() {
+        func(jQuery.noConflict(true))
+    };
+    document.body.appendChild(scr)
+})(function($) {
+    "use strict";
     
     $('input[value="submit"]').attr('value', '話す');
     
