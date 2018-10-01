@@ -47,7 +47,7 @@ javascript: (function(func, scr) {
 
     const output = imgUrl + imgList[r];
     
-    const checkDiv = $('input[value="submit"]');
+    const checkDiv = $('hr[color="#0080FF"]');
     if (checkDiv.length > 0){
         const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
         tagDiv.attr('src', output);
