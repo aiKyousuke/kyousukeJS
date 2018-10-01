@@ -8,6 +8,8 @@ javascript: (function(func, scr) {
 })(function($) {
     "use strict";
     
+    $('body').css('margin', '0px');
+    
     $('input[value="submit"]').attr('value', '話す');
     
 });
