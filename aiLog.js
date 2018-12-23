@@ -27,10 +27,7 @@ javascript: (function(func, scr) {
         return Math.floor(max * nextUInt());
     };    
     
-    const mainText = $('#text').html();
-    
-    const imgUrl = 'http://phantom.ai-saloon.com/pic/780/';
-
+    const imgUrl = '../../pic/780/';
     const imgList = ['lba2121.jpg', 'rngif1.gif', 'moa3.jpg', 'kda5.jpg', 'ssa1.jpg',
                      'lba8.jpg', 'aca1.jpg', 'kda4.jpg', 'kma2.jpg', 'kma1.jpg',
                      'anime0301.jpg', 'animeex1.jpg', 'komaria01.jpg', 'anime15n01.jpg', 'rna4.jpg',
@@ -41,18 +38,8 @@ javascript: (function(func, scr) {
                      'msa2.jpg', 'kya1.jpg', 'kma4.jpg', '79942.jpg', 'lba7.jpg',
                      'lba6.jpg', 'lba5.jpg', 'lba4.jpg', 'lba3.jpg', 'lba2.jpg',
                      'lba1.jpg', 'yka2.jpg', 'kda2.jpg'];
-
     const imgCount = imgList.length;
     const r = Math.randomInt(imgCount);
-
     const output = imgUrl + imgList[r];
-    
-    const checkDiv = $('hr[color="#0080FF"]');
-    if (checkDiv.length > 0){
-        const tagDiv = $('body > div:eq(0) > a:eq(0) > img:eq(0)');
-        tagDiv.attr('src', output);
-    } else {
-        const tagDiv = $('body > div:eq(0) > div:eq(0) > div:eq(0)');
-        tagDiv.html('<a href="http://ai-saloon.com/"><img src="'+output+'" border="0"></a>');
-    };    
+    $('.baby_pic').attr('src', output);
 });
