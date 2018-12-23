@@ -29,7 +29,7 @@ javascript: (function(func, scr) {
     
     const mainText = $('#text').html();
     
-    const imgUrl = 'personal/user780/pic/';
+    const imgUrl = 'http://phantom.ai-saloon.com/pic/780/';
 
     const imgList = ['lba2121.jpg', 'rngif1.gif', 'moa3.jpg', 'kda5.jpg', 'ssa1.jpg',
                      'lba8.jpg', 'aca1.jpg', 'kda4.jpg', 'kma2.jpg', 'kma1.jpg',
